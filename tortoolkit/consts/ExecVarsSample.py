@@ -25,7 +25,7 @@ except:
         EDIT_SLEEP_SECS = 10
 
         # Telegram Upload Limit (in bytes)
-        TG_UP_LIMIT = 1900000000
+        TG_UP_LIMIT = 1700000000
 
         # Should force evething uploaded into Document
         FORCE_DOCUMENTS = False
@@ -55,7 +55,7 @@ except:
         
         # Instagram Credentials Stuff [( if you want InstaDL to work :)]
         INSTA_UNAME = ""
-        INSTA_PASS =""
+        INSTA_PASS = ""
 
         # This value will be considered only if Rclone is True - this may be defied now ;)
         # Cuz at least one needs to be Ture at a time either RCLONE or Leech.
@@ -86,7 +86,7 @@ except:
 
         # Set this to your bot username if you want to add the username of your bot at the end of the commands like
         # /leech@TorToolkitBot so the value will be @TorToolkitBot
-        BOT_CMD_POSTFIX = "@Nexleechbot"
+        BOT_CMD_POSTFIX = ""
 
         # Time out for the status Delete.
         STATUS_DEL_TOUT = 20

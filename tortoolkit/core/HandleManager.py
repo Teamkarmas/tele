@@ -256,7 +256,7 @@ async def handle_leech_command(e):
     else:
         rclone = False
         tsp = time.time()
-        buts = [[KeyboardButtonCallback("To Telegram", data=f"leechselect tg {tsp}")]]
+        buts = [[KeyboardButtonCallback("🤯Upload To Telegram🤯", data=f"leechselect tg {tsp}")]]
         if await get_config() is not None:
             buts.append(
                 [KeyboardButtonCallback("To Drive", data=f"leechselect drive {tsp}")]
@@ -267,20 +267,20 @@ async def handle_leech_command(e):
         buts.append(
             [
                 KeyboardButtonCallback(
-                    "Upload in a ZIP.[Toggle]", data=f"leechzip toggle {tsp}"
+                    "🗜Upload in a ZIP.[Toggle]🗜", data=f"leechzip toggle {tsp}"
                 )
             ]
         )
         buts.append(
             [
                 KeyboardButtonCallback(
-                    "Extract from Archive.[Toggle]", data=f"leechzipex toggleex {tsp}"
+                    "📡Extract from Archive.[Toggle]📡", data=f"leechzipex toggleex {tsp}"
                 )
             ]
         )
 
         conf_mes = await e.reply(
-            f"First click if you want to zip the contents or extract as an archive (only one will work at a time) then...\n\n<b>Choose where to upload your files:-</b>\nThe files will be uploaded to default destination: <b>{get_val('DEFAULT_TIMEOUT')}</b> after 60 sec of no action by user.</u>\n\n<b>Supported archives to extract:</b>\nzip, 7z, tar, gzip2, iso, wim, rar, tar.gz, tar.bz2",
+            f"First click if you want to zip the contents or extract as an archive (only one will work at a time) then...\n\n<b>Choose where to upload your files:-</b>\nThe files will be uploaded to default destination: <b>{get_val('DEFAULT_TIMEOUT')}</b> after 60 sec of no action by user.</u>\n\n<b>Supported archives to extract:</b>\nzip, 7z, tar, gzip2, iso, wim, rar, tar.gz, tar.bz2 Powered by @Thanimaibots",
             parse_mode="html",
             buttons=buts,
         )
@@ -737,18 +737,18 @@ async def handle_server_command(message):
 
     if callbk:
         msg = (
-            f"<b>BOT UPTIME:-</b> {diff}\n\n"
-            "<b>CPU STATS:-</b>\n"
-            f"Cores: {cores} Logical: {lcores}\n"
-            f"CPU Frequency: {freqcurrent}  Mhz Max: {freqmax}\n"
-            f"CPU Utilization: {cpupercent}%\n"
+            f"<b>📡BOT UPTIME📡:-</b> {diff}\n\n"
+            "<b>🔋CPU STATS🔋:-</b>\n"
+            f"💳Cores💳: {cores} Logical: {lcores}\n"
+            f"💎CPU Frequency💎: {freqcurrent}  Mhz Max: {freqmax}\n"
+            f"🗑CPU Utilization🗑: {cpupercent}%\n"
             "\n"
-            "<b>STORAGE STATS:-</b>\n"
-            f"Total: {totaldsk}\n"
+            "<b>📥STORAGE STATS📥:-</b>\n"
+            f"💵Total💵: {totaldsk}\n"
             f"Used: {useddsk}\n"
             f"Free: {freedsk}\n"
             "\n"
-            "<b>MEMORY STATS:-</b>\n"
+            "<b>💌MEMORY STATS💌:-</b>\n"
             f"Available: {memavailable}\n"
             f"Total: {memtotal}\n"
             f"Usage: {mempercent}%\n"
@@ -816,8 +816,8 @@ async def about_me(message):
         f"<b>Version</b>: <code>{__version__}</code>\n"
         f"<b>Telethon Version</b>: {telever}\n"
         f"<b>Pyrogram Version</b>: {pyrover}\n"
-        "<b>Created By</b>: @Yaknight\n\n"
-        "<b>Modified By</b>: @shado_hackers\n\n"
+        "<b>Created By</b>: @lonelyking786\n\n"
+        "<b>Modified By</b>: @sarbudeen786\n\n"
         "<u>Currents Configs:-</u>\n\n"
         f"<b>Bot Uptime:-</b> {diff}\n"
         "<b>Torrent Download Engine:-</b> <code>qBittorrent [4.3.0 fix active]</code> \n"
@@ -881,7 +881,7 @@ async def set_thumb_cmd(e):
 
     user_db.set_var("DISABLE_THUMBNAIL", False, str(e.sender_id))
     await e.reply(
-        "Thumbnail set. try using /usettings to get more control. Can be used in private too."
+        "Thumbnail set. try using /usettings to get more control. Can be used in private too. Powered by @Thanimaisupport"
     )
 
 
@@ -933,7 +933,7 @@ async def booted(client):
     chats = get_val("ALD_USR")
     for i in chats:
         try:
-            await client.send_message(i, "𝙽𝚎𝚡𝚕𝚎𝚎𝚌𝚑  𝚒𝚜 𝚋𝚘𝚘𝚝𝚎𝚍 , 𝚛𝚎𝚊𝚍𝚢 𝚝𝚘 𝚞𝚜𝚎..")
+            await client.send_message(i, "lonely𝚕𝚎𝚎𝚌𝚑  𝚒𝚜 𝚋𝚘𝚘𝚝𝚎𝚍 🤖, Wakeing up🥱🥱")
         except Exception:
             torlog.info(f"Not found the entity {i}")
 

@@ -29,7 +29,7 @@ no = "❌"
 yes = "✅"
 # Central object is not used its Acknowledged
 tordb = TorToolkitDB()
-header = '<b>Nexleech by <a href="https://t.me/shado_hackers">LUSIFER</a></b>\n<u>USER SETTINGS MENU - v1</u>'
+header = '<b>lonelyleech by <a href="https://t.me/lonelyking786">💔lonelyking👨‍💻</a></b>\n<u>USER SETTINGS MENU - v1</u>'
 
 
 async def handle_user_setting_callback(e):
